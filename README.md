@@ -7,11 +7,17 @@
 
 - [Trend Micro: Self-Propagating Malware Spreading Via WhatsApp, Targets Brazilian Users](https://www.trendmicro.com/en_us/research/25/j/self-propagating-malware-spreads-via-whatsapp.html)
 - [TecMundo: Brasil é alvo de vírus que se espalha sozinho pelo WhatsApp](https://www.tecmundo.com.br/seguranca/407548-brasil-e-alvo-de-virus-que-se-espalha-sozinho-pelo-whatsapp.htm)
+<br>
+
+- [SECGUIDE: Guia de Consulta para Eventos de Segurança do Windows](https://secguide.pages.dev/win-eventos/)
+- [WinTools: Monitoramento de Segurança com o Visualizador de Eventos](https://github.com/ravenastar-js/wintools/blob/all/TOOLS/docs/v_eventos.txt)
+<br>
 
 - [Baboo: Aula 07 - Eliminação TRIPLA de malwares | Windows RÁPIDO e SEGURO](https://youtu.be/nsPtwcyejrA)
 - [Baboo: Windows Rápido e Seguro 2.0 - Aula 09: ESET Online Scanner, Emisoft Em. Kit e Malwarebytes Premium](https://youtu.be/Wnopfm8FYaU)
 - [Baboo: Windows Rápido e Seguro 2.0 - Aula 08: KVRT e HouseCall](https://youtu.be/oSqcTfFcvQc)
 - [Baboo: Windows Rápido e Seguro 2.0](https://youtube.com/playlist?list=PLQfECKnJK6RxHHZ8c8Z8LaBHGfgfbXLpr)
+<br>
 
 - [Fabio Akita: Sua Segurança é uma DROGA | Gerenciadores de Senhas, 2FA, Encriptação](https://youtu.be/s7ldn31OEFc)
 

@@ -9,8 +9,8 @@
 - [TecMundo: Brasil é alvo de vírus que se espalha sozinho pelo WhatsApp](https://www.tecmundo.com.br/seguranca/407548-brasil-e-alvo-de-virus-que-se-espalha-sozinho-pelo-whatsapp.htm)
 <br>
 
-- [SECGUIDE: Guia de Consulta para Eventos de Segurança do Windows](https://secguide.pages.dev/win-eventos/)
 - [WinTools: Monitoramento de Segurança com o Visualizador de Eventos](https://github.com/ravenastar-js/wintools/blob/all/TOOLS/docs/v_eventos.txt)
+- [SECGUIDE: Guia de Consulta para Eventos de Segurança do Windows](https://secguide.pages.dev/win-eventos/)
 <br>
 
 - [Baboo: Aula 07 - Eliminação TRIPLA de malwares | Windows RÁPIDO e SEGURO](https://youtu.be/nsPtwcyejrA)

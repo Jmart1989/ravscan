@@ -1,3 +1,8 @@
+> [!WARNING]  
+>  ⚠️ Esta ferramenta é um recurso complementar e não substitui um antivírus nem o trabalho de um especialista da área.
+
+---
+
 # 🚀 RAVSCAN - Scanner de Segurança para Windows
 
 > **Ferramenta para detecção, análise e remoção de malwares com foco em ameaças brasileiras**

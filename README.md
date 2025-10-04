@@ -3,6 +3,13 @@
 
 ---
 
+# 🌐 FONTES
+
+- [Trend Micro: Self-Propagating Malware Spreading Via WhatsApp, Targets Brazilian Users](https://www.trendmicro.com/en_us/research/25/j/self-propagating-malware-spreads-via-whatsapp.html)
+- [TecMundo: Brasil é alvo de vírus que se espalha sozinho pelo WhatsApp](https://www.tecmundo.com.br/seguranca/407548-brasil-e-alvo-de-virus-que-se-espalha-sozinho-pelo-whatsapp.htm)
+
+---
+
 # 🚀 RAVSCAN - Scanner de Segurança para Windows
 
 > **Ferramenta para detecção, análise e remoção de malwares com foco em ameaças brasileiras**

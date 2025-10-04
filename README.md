@@ -1,5 +1,5 @@
 > [!WARNING]  
->  ⚠️ Esta ferramenta é um recurso complementar e não substitui um antivírus nem o trabalho de um especialista da área.
+> Esta ferramenta é um recurso complementar e não substitui um antivírus nem o trabalho de um especialista da área.
 
 ---
 

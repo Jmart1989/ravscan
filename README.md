@@ -539,6 +539,6 @@ dir logs\
 
 ---
 
-*📅 **Versão:** 1.0.0 | **Compatível:** Windows 7, 8, 10, 11 | **Arquitetura:**x86 e x64* 
+*📅 **Versão:** 1.0.0 | **Compatível:** Windows 7, 8, 10, 11 | **Arquitetura:** x86 e x64* 
 
 *🔒 **Desenvolvido com foco em segurança e eficiência para ambientes corporativos e domésticos***

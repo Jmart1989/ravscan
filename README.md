@@ -5,22 +5,35 @@
 
 # 🌐 FONTES & COMPLEMENTARES
 
-- [Trend Micro: Self-Propagating Malware Spreading Via WhatsApp, Targets Brazilian Users](https://www.trendmicro.com/en_us/research/25/j/self-propagating-malware-spreads-via-whatsapp.html)
-- [TecMundo: Brasil é alvo de vírus que se espalha sozinho pelo WhatsApp](https://www.tecmundo.com.br/seguranca/407548-brasil-e-alvo-de-virus-que-se-espalha-sozinho-pelo-whatsapp.htm)
-<br>
+<details>
+  <summary><strong>📰 Artigos</strong></summary>
 
-- [WinTools: Monitoramento de Segurança com o Visualizador de Eventos](https://github.com/ravenastar-js/wintools/blob/all/TOOLS/docs/v_eventos.txt)
-- [SECGUIDE: Guia de Consulta para Eventos de Segurança do Windows](https://secguide.pages.dev/win-eventos/)
-<br>
+  - [Trend Micro: Self-Propagating Malware Spreading Via WhatsApp, Targets Brazilian Users](https://www.trendmicro.com/en_us/research/25/j/self-propagating-malware-spreads-via-whatsapp.html)
+  - [TecMundo: Brasil é alvo de vírus que se espalha sozinho pelo WhatsApp](https://www.tecmundo.com.br/seguranca/407548-brasil-e-alvo-de-virus-que-se-espalha-sozinho-pelo-whatsapp.htm)
+</details>
 
-- [Baboo: Aula 07 - Eliminação TRIPLA de malwares | Windows RÁPIDO e SEGURO](https://youtu.be/nsPtwcyejrA)
-- [Baboo: Aula 08 - Bloqueador de propaganda e de URL | Windows RÁPIDO e SEGURO](https://youtu.be/Msd_taTz5Eg)
-- [Baboo: Windows Rápido e Seguro 2.0 - Aula 08: KVRT e HouseCall](https://youtu.be/oSqcTfFcvQc)
-- [Baboo: Windows Rápido e Seguro 2.0 - Aula 09: ESET Online Scanner, Emisoft Em. Kit e Malwarebytes Premium](https://youtu.be/Wnopfm8FYaU)
-- [Baboo: Windows Rápido e Seguro 2.0](https://youtube.com/playlist?list=PLQfECKnJK6RxHHZ8c8Z8LaBHGfgfbXLpr)
-<br>
+<details>
+  <summary><strong>⚙️ Ferramentas e Guias Técnicos</strong></summary>
 
-- [Fabio Akita: Sua Segurança é uma DROGA | Gerenciadores de Senhas, 2FA, Encriptação](https://youtu.be/s7ldn31OEFc)
+  - [WinTools: Monitoramento de Segurança com o Visualizador de Eventos](https://github.com/ravenastar-js/wintools/blob/all/TOOLS/docs/v_eventos.txt)
+  - [SECGUIDE: Guia de Consulta para Eventos de Segurança do Windows](https://secguide.pages.dev/win-eventos/)
+</details>
+
+<details>
+  <summary><strong>🎓 Aurelio "Baboo" </strong></summary>
+
+  - [WRS: Aula 07 - Eliminação TRIPLA de malwares](https://youtu.be/nsPtwcyejrA)
+  - [WRS: Aula 08 - Bloqueador de propaganda e de URL](https://youtu.be/Msd_taTz5Eg)
+  - [WRS2: Aula 08 - KVRT e HouseCall](https://youtu.be/oSqcTfFcvQc)
+  - [WRS2: Aula 09 - ESET Online Scanner, Emisoft Em. Kit e Malwarebytes Premium](https://youtu.be/Wnopfm8FYaU)
+  - [Playlist Completa - Windows Rápido e Seguro 2.0](https://youtube.com/playlist?list=PLQfECKnJK6RxHHZ8c8Z8LaBHGfgfbXLpr)
+</details>
+
+<details>
+  <summary><strong>🎓 Fábio Akita</strong></summary>
+
+  - [Sua Segurança é uma DROGA | Gerenciadores de Senhas, 2FA, Encriptação](https://youtu.be/s7ldn31OEFc)
+</details>
 
 ---
 

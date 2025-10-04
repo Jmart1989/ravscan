@@ -1,8 +1,17 @@
-# Lista de arquivos maliciosos conhecidos 
-# Adicione um padrao de arquivo por linha 
-# Linhas começando com # são comentários 
- 
-ComprovanteSantander-*.lnk 
-HealthApp-*.bat 
-DOC-*.lnk 
-*.scr 
+# Lista de padrões de arquivos maliciosos - Campanha SORVEPOTEL
+# Baseado em pesquisa Trend Micro
+# Arquivos ZIP maliciosos
+
+RES-*.zip
+ORCAMENTO_*.zip
+COMPROVANTE_*.zip
+ComprovanteSantander-*.zip
+NEW-*-PED_*.zip
+
+# Atalhos Windows LNK maliciosos (gerados após extração)
+ComprovanteSantander-*.lnk
+HealthApp-*.bat
+DOC-*.lnk
+
+# Scripts de persistência (Startup)
+HealthApp-0d97b7.bat

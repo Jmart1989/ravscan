@@ -1,7 +1,9 @@
-# Lista de processos maliciosos conhecidos 
-# Adicione um processo por linha 
-# Linhas começando com # são comentários 
- 
-HealthApp-0d97b7.bat 
-malware.exe 
-virus.bat 
+# Lista de processos e executáveis maliciosos - Campanha SORVEPOTEL
+# Baseado em pesquisa Trend Micro
+# Arquivos executáveis e scripts de payload
+
+HealthApp-0d97b7.bat
+malware.exe
+virus.bat
+trojan.exe
+backdoor.exe

@@ -1,14 +1,17 @@
-# Lista de IPs maliciosos conhecidos 
-# Adicione um IP por linha 
-# Linhas começando com # são comentários 
- 
-109.176.30.141 
-165.154.254.44 
-23.227.203.148 
-77.111.101.169 
-expansiveuser[.]com 
-sorvetenopote[.]com 
-imobiliariaricardoparanhos[.]com 
-zapgrande[.]com 
-casadecampoamazonas[.]com 
-expansivebot[.]com 
+# Lista de IPs e domínios maliciosos - Campanha SORVEPOTEL
+# Baseado em pesquisa Trend Micro
+# Endereços IP maliciosos
+
+109.176.30.141
+165.154.254.44
+23.227.203.148
+77.111.101.169
+
+# Domínios C&C e de distribuição de payload
+sorvetenopoate[.]com
+sorvetenoopote[.]com
+etenopote[.]com
+expahnsiveuser[.]com
+sorv[.]etenopote[.]com
+sorvetenopotel[.]com
+cliente[.]rte[.]com[.]br

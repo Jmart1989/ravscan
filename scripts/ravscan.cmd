@@ -432,9 +432,10 @@ set /a "FILES_FOUND=0"
 set "FOUND_FILES="
 call :show_debug "Buscando padrao: !PATTERN!"
 
-:: Locais de busca
-set "SCAN_LOCATIONS=%USERPROFILE%\Desktop %USERPROFILE%\Downloads %TEMP% %APPDATA% %PROGRAMDATA% C:\Windows\Temp"
+:: Locais de busca expandidos para a campanha SORVEPOTEL
+set "SCAN_LOCATIONS=%USERPROFILE%\Desktop %USERPROFILE%\Downloads %USERPROFILE%\Documents %TEMP% %APPDATA% %PROGRAMDATA% C:\Windows\Temp"
 
+:: Busca recursiva nos locais
 for %%D in (!SCAN_LOCATIONS!) do (
     if exist "%%D" (
         for /f "delims=" %%F in ('dir "%%D\!PATTERN!" /b /s /a-d 2^>nul') do (
@@ -478,7 +479,7 @@ set "PERSISTENCE_FOUND="
 call :show_info "Verificando mecanismos de persistencia..."
 
 :: Locais comuns de persistência
-set "PERSISTENCE_LOCATIONS=%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup %PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\StartUp"
+set "PERSISTENCE_LOCATIONS=%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup %PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\StartUp %USERPROFILE%\AppData\Roaming\Microsoft\Windows\Recent"
 
 call :read_file_list
 for %%D in (!PERSISTENCE_LOCATIONS!) do (
@@ -491,6 +492,18 @@ for %%D in (!PERSISTENCE_LOCATIONS!) do (
                     set "PERSISTENCE_FOUND=!PERSISTENCE_FOUND!%%D\%%A:"
                 )
             )
+        )
+    )
+)
+
+:: Verificar também arquivos ZIP em locais suspeitos
+call :show_info "Verificando arquivos ZIP em locais suspeitos..."
+for %%D in (%USERPROFILE%\Desktop %USERPROFILE%\Downloads) do (
+    if exist "%%D" (
+        for /f "delims=" %%A in ('dir "%%D\*SORVEPOTEL*.zip" "%%D\*COMPROVANTE*.zip" "%%D\*SANTANDER*.zip" /b 2^>nul') do (
+            set /a "PERSISTENCE_COUNT+=1"
+            call :show_threat "ARQUIVO ZIP SUSPEITO" "%%D\%%A" "Possivel campanha SORVEPOTEL"
+            set "PERSISTENCE_FOUND=!PERSISTENCE_FOUND!%%D\%%A:"
         )
     )
 )
@@ -614,14 +627,15 @@ echo.
 call :print_box "RAVSCAN Professional v%VERSION%" "32"
 echo.
 echo    Desenvolvido para deteccao de malwares brasileiros
-echo    Foco em ameacas como Sorvetepotel e similares
+echo    Foco especifico na campanha SORVEPOTEL e similares
+echo    Baseado em pesquisa Trend Micro sobre malware do WhatsApp
 echo.
 echo    Caracteristicas:
-echo      • Scanner baseado em listas personalizaveis
+echo      • Scanner especializado em SORVEPOTEL
+echo      • Deteccao de arquivos ZIP, LNK e BAT maliciosos
+echo      • Monitoramento de dominios C&C
 echo      • Interface profissional com sistema de cores
 echo      • Sistema de logging integrado
-echo      • Remocao automatica opcional
-echo      • Verificacao de persistencia
 echo.
 if "!MODE!"=="interactive" (
     call :pause_and_continue
@@ -942,10 +956,10 @@ exit /b 0
 
 :initialize_data_files
 if not exist "%DATA_DIR%\processos.txt" (
-    echo # Lista de processos maliciosos conhecidos - Campanha SORVEPOTEL > "%DATA_DIR%\processos.txt"
+    echo # Processos maliciosos conhecidos - Campanha SORVEPOTEL > "%DATA_DIR%\processos.txt"
     echo # Baseado em pesquisa Trend Micro >> "%DATA_DIR%\processos.txt"
-    echo # Arquivos executáveis e scripts de payload >> "%DATA_DIR%\processos.txt"
     echo. >> "%DATA_DIR%\processos.txt"
+    echo # Arquivos executáveis e scripts de payload >> "%DATA_DIR%\processos.txt"
     echo HealthApp-0d97b7.bat >> "%DATA_DIR%\processos.txt"
     echo malware.exe >> "%DATA_DIR%\processos.txt"
     echo virus.bat >> "%DATA_DIR%\processos.txt"
@@ -954,18 +968,21 @@ if not exist "%DATA_DIR%\processos.txt" (
 )
 
 if not exist "%DATA_DIR%\arquivos.txt" (
-    echo # Lista de padrões de arquivos maliciosos - Campanha SORVEPOTEL > "%DATA_DIR%\arquivos.txt"
+    echo # Padrões de arquivos maliciosos - Campanha SORVEPOTEL > "%DATA_DIR%\arquivos.txt"
     echo # Baseado em pesquisa Trend Micro >> "%DATA_DIR%\arquivos.txt"
+    echo. >> "%DATA_DIR%\arquivos.txt"
     echo # Arquivos ZIP maliciosos >> "%DATA_DIR%\arquivos.txt"
     echo RES-*.zip >> "%DATA_DIR%\arquivos.txt"
     echo ORCAMENTO_*.zip >> "%DATA_DIR%\arquivos.txt"
     echo COMPROVANTE_*.zip >> "%DATA_DIR%\arquivos.txt"
     echo ComprovanteSantander-*.zip >> "%DATA_DIR%\arquivos.txt"
     echo NEW-*-PED_*.zip >> "%DATA_DIR%\arquivos.txt"
+    echo. >> "%DATA_DIR%\arquivos.txt"
     echo # Atalhos Windows LNK maliciosos >> "%DATA_DIR%\arquivos.txt"
     echo ComprovanteSantander-*.lnk >> "%DATA_DIR%\arquivos.txt"
     echo HealthApp-*.bat >> "%DATA_DIR%\arquivos.txt"
     echo DOC-*.lnk >> "%DATA_DIR%\arquivos.txt"
+    echo. >> "%DATA_DIR%\arquivos.txt"
     echo # Scripts de persistencia >> "%DATA_DIR%\arquivos.txt"
     echo HealthApp-0d97b7.bat >> "%DATA_DIR%\arquivos.txt"
 )
@@ -973,11 +990,13 @@ if not exist "%DATA_DIR%\arquivos.txt" (
 if not exist "%DATA_DIR%\ips.txt" (
     echo # Lista de IPs e dominios maliciosos - Campanha SORVEPOTEL > "%DATA_DIR%\ips.txt"
     echo # Baseado em pesquisa Trend Micro >> "%DATA_DIR%\ips.txt"
+    echo. >> "%DATA_DIR%\ips.txt"
     echo # Enderecos IP maliciosos >> "%DATA_DIR%\ips.txt"
     echo 109.176.30.141 >> "%DATA_DIR%\ips.txt"
     echo 165.154.254.44 >> "%DATA_DIR%\ips.txt"
     echo 23.227.203.148 >> "%DATA_DIR%\ips.txt"
     echo 77.111.101.169 >> "%DATA_DIR%\ips.txt"
+    echo. >> "%DATA_DIR%\ips.txt"
     echo # Dominios C&C e de distribuicao de payload >> "%DATA_DIR%\ips.txt"
     echo sorvetenopoate[.]com >> "%DATA_DIR%\ips.txt"
     echo sorvetenoopote[.]com >> "%DATA_DIR%\ips.txt"

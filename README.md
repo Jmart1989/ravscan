@@ -193,7 +193,10 @@ O RAVSCAN utiliza três arquivos principais para detecção, localizados na past
 
 ### **1. Processos Maliciosos (`data\processos.txt`)**
 ```
-# Lista de processos maliciosos (um por linha)
+# Lista (um por linha)
+# Processos e executáveis maliciosos - Campanha SORVEPOTEL
+# Baseado em pesquisa Trend Micro
+# Arquivos executáveis e scripts de payload
 # Formato: nome_do_processo.exe
 # Comentários começam com #
 
@@ -207,32 +210,44 @@ backdoor.exe
 
 ### **2. Padrões de Arquivos (`data\arquivos.txt`)**
 ```
-# Padrões de arquivos maliciosos  
+# Lista (um por linha)
+# Padrões de arquivos maliciosos - Campanha SORVEPOTEL
+# Baseado em pesquisa Trend Micro
+# Arquivos ZIP maliciosos
 # Use * para curingas
 # Suporta múltiplas extensões
+# Comentários começam com #
 
+RES-*.zip
+ORCAMENTO_*.zip
+COMPROVANTE_*.zip
+ComprovanteSantander-*.zip
+NEW-*-PED_*.zip
 ComprovanteSantander-*.lnk
 HealthApp-*.bat
 DOC-*.lnk
-*.scr
-trojan-*.exe
-malware-*.dll
-*.cpl
-*.pif
+HealthApp-0d97b7.bat
 ```
 
 ### **3. IPs e Domínios Maliciosos (`data\ips.txt`)**
 ```
-# IPs e domínios maliciosos
-# Um por linha, domínios entre [.] para evitar acionamento
+# Lista (um por linha)
+# IPs e domínios maliciosos - Campanha SORVEPOTEL
+# Baseado em pesquisa Trend Micro
+# Domínios entre [.] para evitar acionamento
+# Comentários começam com #
 
 109.176.30.141
-sorvetenopote[.]com
-expansiveuser[.]com
-23.227.203.148
 165.154.254.44
-imobiliariaricardoparanhos[.]com
-zapgrande[.]com
+23.227.203.148
+77.111.101.169
+sorvetenopoate[.]com
+sorvetenoopote[.]com
+etenopote[.]com
+expahnsiveuser[.]com
+sorv[.]etenopote[.]com
+sorvetenopotel[.]com
+cliente[.]rte[.]com[.]br
 ```
 
 ---

@@ -1,7 +1,7 @@
-# Lista de processos e executáveis maliciosos - Campanha SORVEPOTEL
+# Processos e executáveis maliciosos - Campanha SORVEPOTEL
 # Baseado em pesquisa Trend Micro
-# Arquivos executáveis e scripts de payload
 
+# Arquivos executáveis e scripts de payload
 HealthApp-0d97b7.bat
 malware.exe
 virus.bat

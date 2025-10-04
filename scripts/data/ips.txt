@@ -1,7 +1,7 @@
-# Lista de IPs e domínios maliciosos - Campanha SORVEPOTEL
+# IPs e domínios maliciosos - Campanha SORVEPOTEL
 # Baseado em pesquisa Trend Micro
-# Endereços IP maliciosos
 
+# Endereços IP maliciosos
 109.176.30.141
 165.154.254.44
 23.227.203.148

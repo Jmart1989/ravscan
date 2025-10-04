@@ -1,7 +1,7 @@
-# Lista de padrões de arquivos maliciosos - Campanha SORVEPOTEL
+# Padrões de arquivos maliciosos - Campanha SORVEPOTEL
 # Baseado em pesquisa Trend Micro
-# Arquivos ZIP maliciosos
 
+# Arquivos ZIP maliciosos
 RES-*.zip
 ORCAMENTO_*.zip
 COMPROVANTE_*.zip

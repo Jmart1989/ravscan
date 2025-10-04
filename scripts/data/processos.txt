@@ -1,0 +1,7 @@
+# Lista de processos maliciosos conhecidos 
+# Adicione um processo por linha 
+# Linhas começando com # são comentários 
+ 
+HealthApp-0d97b7.bat 
+malware.exe 
+virus.bat 

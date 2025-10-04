@@ -1,0 +1,14 @@
+# Lista de IPs maliciosos conhecidos 
+# Adicione um IP por linha 
+# Linhas começando com # são comentários 
+ 
+109.176.30.141 
+165.154.254.44 
+23.227.203.148 
+77.111.101.169 
+expansiveuser[.]com 
+sorvetenopote[.]com 
+imobiliariaricardoparanhos[.]com 
+zapgrande[.]com 
+casadecampoamazonas[.]com 
+expansivebot[.]com 

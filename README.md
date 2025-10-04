@@ -14,6 +14,7 @@
 <br>
 
 - [Baboo: Aula 07 - Eliminação TRIPLA de malwares | Windows RÁPIDO e SEGURO](https://youtu.be/nsPtwcyejrA)
+- [Baboo: Aula 08 - Bloqueador de propaganda e de URL | Windows RÁPIDO e SEGURO](https://youtu.be/Msd_taTz5Eg)
 - [Baboo: Windows Rápido e Seguro 2.0 - Aula 08: KVRT e HouseCall](https://youtu.be/oSqcTfFcvQc)
 - [Baboo: Windows Rápido e Seguro 2.0 - Aula 09: ESET Online Scanner, Emisoft Em. Kit e Malwarebytes Premium](https://youtu.be/Wnopfm8FYaU)
 - [Baboo: Windows Rápido e Seguro 2.0](https://youtube.com/playlist?list=PLQfECKnJK6RxHHZ8c8Z8LaBHGfgfbXLpr)

@@ -623,6 +623,6 @@ dir logs\
 
 ## Feito com 💚 por [RavenaStar](https://linktr.ee/ravenastar)
 
-[⬆ Voltar ao topo](#-fontes-complementares)
+[⬆ Voltar ao topo](#-créditos-especiais)
 
 </div>

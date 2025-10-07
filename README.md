@@ -1,3 +1,19 @@
+<h2 align="center">✨ Créditos especiais:</h2>
+
+<table align="center">
+  <tr> 
+    <td align="center" style="word-wrap: break-word; width: 150px; height: 150px;">
+      <a href="https://github.com/Gorniaky">
+        <img src="https://i.imgur.com/E8DjPh5.jpeg" width="100" style="border-radius:50%; padding-top:10px;" alt="Clébio Gomes"/>
+        <br />
+        <sub style="font-size:14px"><b>Clébio Gomes</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
 > [!WARNING]  
 > Esta ferramenta é um recurso complementar que **não substitui um antivírus**, nem dispensa os serviços de especialistas da área de segurança digital.
 
@@ -600,3 +616,13 @@ dir logs\
 *📅 **Versão:** 1.0.0 | **Compatível:** Windows 7, 8, 10, 11 | **Arquitetura:** x86 e x64* 
 
 *🔒 **Desenvolvido com foco em segurança e eficiência para ambientes corporativos e domésticos***
+
+---
+
+<div align="center">
+
+## Feito com 💚 por [RavenaStar](https://linktr.ee/ravenastar)
+
+[⬆ Voltar ao topo](#-fontes-&-complementares)
+
+</div>

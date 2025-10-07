@@ -225,58 +225,81 @@ Cores e Efeitos: [ATIVADO] - Interface colorida e visual
 
 ### **Estrutura de Arquivos de Dados**
 
-O RAVSCAN utiliza três arquivos principais para detecção, localizados na pasta `data\`:
+O RAVSCAN utiliza seis arquivos principais para detecção, localizados na pasta `data\`:
 
-### **1. Processos Maliciosos (`data\processos.txt`)**
-```
-# Lista (um por linha)
-# Processos e executáveis maliciosos - Campanha SORVEPOTEL
-# Baseado em pesquisa Trend Micro
-# Arquivos executáveis e scripts de payload
-# Formato: nome_do_processo.exe
-# Comentários começam com #
-
-malware.exe
-virus.bat  
-HealthApp-0d97b7.bat
-suspicious_process.exe
-trojan.exe
-backdoor.exe
-```
-
-### **2. Padrões de Arquivos (`data\arquivos.txt`)**
+### **1. Padrões de Arquivos (`data\arquivos.txt`)**
 ```
 # Lista (um por linha)
 # Padrões de arquivos maliciosos - Campanha SORVEPOTEL
 # Baseado em pesquisa Trend Micro
-# Arquivos ZIP maliciosos
 # Use * para curingas
 # Suporta múltiplas extensões
 # Comentários começam com #
 
+# Arquivos ZIP maliciosos
 RES-*.zip
 ORCAMENTO_*.zip
 COMPROVANTE_*.zip
 ComprovanteSantander-*.zip
 NEW-*-PED_*.zip
+
+# Atalhos Windows LNK maliciosos
 ComprovanteSantander-*.lnk
 HealthApp-*.bat
 DOC-*.lnk
+
+# Scripts de persistencia
 HealthApp-0d97b7.bat
 ```
 
-### **3. IPs e Domínios Maliciosos (`data\ips.txt`)**
+### **2. Diretório de possiveis infecções (`data\caminhos.txt`)**
 ```
 # Lista (um por linha)
-# IPs e domínios maliciosos - Campanha SORVEPOTEL
-# Baseado em pesquisa Trend Micro
-# Domínios entre [.] para evitar acionamento
+# Locais de verificacao para campanha SORVEPOTEL 
+# Baseado em analise comportamental do malware 
+# Use * para curingas
+# Suporta múltiplas extensões
 # Comentários começam com #
 
-109.176.30.141
-165.154.254.44
-23.227.203.148
-77.111.101.169
+# Diretorios de usuario 
+%USERPROFILE%\Desktop 
+%USERPROFILE%\Downloads 
+%USERPROFILE%\Documents 
+%USERPROFILE%\AppData\Local\Temp 
+%USERPROFILE%\AppData\Roaming 
+%USERPROFILE%\AppData\Local 
+ 
+# Diretorios do sistema 
+%TEMP% 
+%APPDATA% 
+%PROGRAMDATA% 
+%WINDIR%\Temp 
+ 
+# Locais de persistencia 
+%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup 
+%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup 
+%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Startup 
+ 
+# Locais especificos da campanha 
+%USERPROFILE%\AppData\Local\Microsoft\Windows\PowerShell 
+%USERPROFILE%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs 
+%USERPROFILE%\AppData\Local\Microsoft\CLR_v4.0_64\UsageLogs 
+%USERPROFILE%\Documents\WindowsPowerShell 
+%WINDIR%\System32 
+%WINDIR%\SysWOW64 
+%USERPROFILE%\AppData\Local\Microsoft\Windows\PowerShell 
+%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Startup 
+```
+
+### **3. Dominios C&C (`data\dominios.txt`)**
+```
+# Lista (um por linha)
+# Lista de dominios maliciosos - Campanha SORVEPOTEL 
+# Baseado em pesquisa Trend Micro 
+# FORMATO COM [.] para prevenir acionamentos acidentais
+# O scanner converte internamente para verificacao
+ 
+# Dominios C&C (FORMATO [.] para seguranca)
 sorvetenopoate[.]com
 sorvetenoopote[.]com
 etenopote[.]com
@@ -284,6 +307,52 @@ expahnsiveuser[.]com
 sorv[.]etenopote[.]com
 sorvetenopotel[.]com
 cliente[.]rte[.]com[.]br
+```
+
+### **4. Processos Maliciosos (`data\ips.txt`)**
+```
+# Lista (um por linha)
+# Lista de IPs maliciosos - Campanha SORVEPOTEL 
+# Baseado em pesquisa Trend Micro 
+# Apenas endereços IP para verificacao de rede
+# Comentários começam com #
+ 
+# Enderecos IP maliciosos 
+109.176.30.141
+165.154.254.44
+23.227.203.148
+77.111.101.169
+```
+
+### **5. Processos Maliciosos (`data\processos.txt`)**
+```
+# Lista (um por linha)
+# Processos e executáveis maliciosos - Campanha SORVEPOTEL
+# Baseado em pesquisa Trend Micro
+# Formato: nome_do_processo.exe
+# Comentários começam com #
+ 
+# Arquivos executáveis e scripts de payload 
+HealthApp-0d97b7.bat
+```
+
+### **6. IPs e Domínios Maliciosos (`data\reg.txt`)**
+```
+# Lista (um por linha)
+# Chaves de registro suspeitas - Campanha SORVEPOTEL
+# APENAS chaves especificamente relacionadas ao malware
+# Nao incluir chaves legítimas do Windows
+# Comentários começam com #
+
+# Chaves especificas do malware SORVEPOTEL
+HKEY_CURRENT_USER\Software\SORVEPOTEL
+HKEY_LOCAL_MACHINE\SOFTWARE\SORVEPOTEL
+HKEY_CURRENT_USER\Software\sorvetenopote
+HKEY_LOCAL_MACHINE\SOFTWARE\sorvetenopote
+
+# Chaves modificadas por malware (COM CAUTELA)
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
 ```
 
 ---
@@ -419,12 +488,12 @@ Mecanismos de persistência: 1
 ├── 📁 scripts/                          ⚙️  # Pasta principal de execução
 │   ├── 🏗️  ravscan.cmd                  🔧  # Script principal do scanner
 │   └── 📁 data/                         🗃️  # Listas de detecção modularizadas
-│       ├── 📄 processos.txt             👁️  # Processos maliciosos conhecidos
 │       ├── 📄 arquivos.txt              📊  # Padrões de arquivos suspeitos
 │       ├── 📄 caminhos.txt              📁  # Locais para verificação
-│       ├── 📄 reg.txt                   🔧  # Chaves de registro suspeitas
-│       ├── 📄 ips.txt                   🌐  # IPs maliciosos (APENAS IPs)
 │       └── 📄 dominios.txt              🔗  # Domínios maliciosos (APENAS domínios)
+│       ├── 📄 ips.txt                   🌐  # IPs maliciosos (APENAS IPs)
+│       ├── 📄 processos.txt             👁️  # Processos maliciosos conhecidos
+│       ├── 📄 reg.txt                   🔧  # Chaves de registro suspeitas
 ├── 📁 logs/                             📒  # Sistema de logging automático
 │   └── 📄 ravscan_AAAAMMDD_HHMMSS.log   ⏰  # Logs com timestamp
 └── 📄 README.txt                        📖  # Documentação do projeto

@@ -3,7 +3,7 @@
 <table align="center">
   <tr> 
     <td align="center" style="word-wrap: break-word; width: 150px; height: 150px;">
-      <a href="https://github.com/Gorniaky">
+      <a href="https://www.instagram.com/clebiotgomes/">
         <img src="https://i.imgur.com/E8DjPh5.jpeg" width="100" style="border-radius:50%; padding-top:10px;" alt="Clébio Gomes"/>
         <br />
         <sub style="font-size:14px"><b>Clébio Gomes</b></sub>
@@ -623,6 +623,6 @@ dir logs\
 
 ## Feito com 💚 por [RavenaStar](https://linktr.ee/ravenastar)
 
-[⬆ Voltar ao topo](#-fontes-&-complementares)
+[⬆ Voltar ao topo](#-fontes-complementares)
 
 </div>

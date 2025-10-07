@@ -1,0 +1,13 @@
+# Chaves de registro suspeitas - Campanha SORVEPOTEL
+# APENAS chaves especificamente relacionadas ao malware
+# Nao incluir chaves legítimas do Windows
+
+# Chaves especificas do malware SORVEPOTEL
+HKEY_CURRENT_USER\Software\SORVEPOTEL
+HKEY_LOCAL_MACHINE\SOFTWARE\SORVEPOTEL
+HKEY_CURRENT_USER\Software\sorvetenopote
+HKEY_LOCAL_MACHINE\SOFTWARE\sorvetenopote
+
+# Chaves modificadas por malware (COM CAUTELA)
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce

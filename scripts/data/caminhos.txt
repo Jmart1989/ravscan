@@ -1,0 +1,31 @@
+# Locais de verificacao para campanha SORVEPOTEL 
+# Baseado em analise comportamental do malware 
+ 
+# Diretorios de usuario 
+%USERPROFILE%\Desktop 
+%USERPROFILE%\Downloads 
+%USERPROFILE%\Documents 
+%USERPROFILE%\AppData\Local\Temp 
+%USERPROFILE%\AppData\Roaming 
+%USERPROFILE%\AppData\Local 
+ 
+# Diretorios do sistema 
+%TEMP% 
+%APPDATA% 
+%PROGRAMDATA% 
+%WINDIR%\Temp 
+ 
+# Locais de persistencia 
+%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup 
+%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup 
+%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Startup 
+ 
+# Locais especificos da campanha 
+%USERPROFILE%\AppData\Local\Microsoft\Windows\PowerShell 
+%USERPROFILE%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs 
+%USERPROFILE%\AppData\Local\Microsoft\CLR_v4.0_64\UsageLogs 
+%USERPROFILE%\Documents\WindowsPowerShell 
+%WINDIR%\System32 
+%WINDIR%\SysWOW64 
+%USERPROFILE%\AppData\Local\Microsoft\Windows\PowerShell 
+%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Startup 

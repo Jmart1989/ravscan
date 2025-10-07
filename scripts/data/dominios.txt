@@ -1,0 +1,13 @@
+# Lista de dominios maliciosos - Campanha SORVEPOTEL 
+# Baseado em pesquisa Trend Micro 
+# FORMATO COM [.] para prevenir acionamentos acidentais
+# O scanner converte internamente para verificacao
+
+# Dominios C&C (FORMATO [.] para seguranca)
+sorvetenopoate[.]com
+sorvetenoopote[.]com
+etenopote[.]com
+expahnsiveuser[.]com
+sorv[.]etenopote[.]com
+sorvetenopotel[.]com
+cliente[.]rte[.]com[.]br

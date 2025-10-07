@@ -402,12 +402,16 @@ Mecanismos de persistência: 1
 📁 ravscan/                              📁  # Diretório raiz do projeto
 ├── 📁 scripts/                          ⚙️  # Pasta principal de execução
 │   ├── 🏗️  ravscan.cmd                  🔧  # Script principal do scanner
-│   └── 📁 data/                         🗃️  # Listas de detecção
+│   └── 📁 data/                         🗃️  # Listas de detecção modularizadas
 │       ├── 📄 processos.txt             👁️  # Processos maliciosos conhecidos
-│       ├── 📄 arquivos.txt              📊  # Padrões de arquivos suspeitos  
-│       └── 📄 ips.txt                   🌐  # IPs e domínios maliciosos
-└── 📁 logs/                             📒  # Sistema de logging automático
-    └── 📄 ravscan_AAAAMMDD_HHMMSS.log   ⏰  # Logs com timestamp
+│       ├── 📄 arquivos.txt              📊  # Padrões de arquivos suspeitos
+│       ├── 📄 caminhos.txt              📁  # Locais para verificação
+│       ├── 📄 reg.txt                   🔧  # Chaves de registro suspeitas
+│       ├── 📄 ips.txt                   🌐  # IPs maliciosos (APENAS IPs)
+│       └── 📄 dominios.txt              🔗  # Domínios maliciosos (APENAS domínios)
+├── 📁 logs/                             📒  # Sistema de logging automático
+│   └── 📄 ravscan_AAAAMMDD_HHMMSS.log   ⏰  # Logs com timestamp
+└── 📄 README.txt                        📖  # Documentação do projeto
 ```
 
 ### **Fluxo de Execução**

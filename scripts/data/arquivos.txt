@@ -8,10 +8,10 @@ COMPROVANTE_*.zip
 ComprovanteSantander-*.zip
 NEW-*-PED_*.zip
 
-# Atalhos Windows LNK maliciosos (gerados após extração)
+# Atalhos Windows LNK maliciosos
 ComprovanteSantander-*.lnk
 HealthApp-*.bat
 DOC-*.lnk
 
-# Scripts de persistência (Startup)
+# Scripts de persistencia
 HealthApp-0d97b7.bat

